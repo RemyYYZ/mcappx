@@ -1253,7 +1253,7 @@
 <p>如果这是你<strong>第一次</strong>在你的设备上安装 Minecraft for Windows，我们强烈建议您先安装游戏框架。如果之前已经在你的设备上安装过了Minecraft for Windows，你可以选择跳过此步骤，直接进行<a href="#_10">下一步“安装游戏”</a>。</p>
 </details>
 <div class="admonition note">
-<p>请根据系统架构选择安装包。<a href="#_6">不知道如何查看系统架构？</a></p>
+<p><font size="3">请根据系统架构选择安装包。<a href="#_6">不知道如何查看系统架构？</a></font></p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio"><input id="__tabbed_1_2" name="__tabbed_1" type="radio"><div class="tabbed-labels"><label for="__tabbed_1_1">x64 &amp; x86</label><label for="__tabbed_1_2">arm</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -1321,35 +1321,25 @@
 </div>
 <div class="tabbed-block">
 <p><em>（适用于电脑里没有应用安装程序的用户）</em></p>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:v:/g/personal/admin_cn_remyyyz_com/EZKl6Se5T7NBsC0EjRQMri0B_YoY_EcB_bBjRJynpiP20g?e=fLyQZN">该方法对于新手操作难度可能较大，推荐观看教程 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11l-4 4Z"></path></svg></span></a></p>
 <p><font size="4"><strong>步骤1:打开 PowerShell</strong></font></p>
-<p><font size="3">在<code>Appx</code>安装包<strong><mark class="critic">所在文件夹里</mark></strong>的<strong><mark class="critic">空白处</mark></strong>，按住<span class="keys"><kbd class="key-shift">Shift</kbd></span><strong>不放</strong>，同时右击鼠标，选择“在此处打开PowerShell窗口”</font></p>
+<p><font size="3">按下<span class="keys"><kbd class="key-windows">Win</kbd><span>+</span><kbd class="key-r">R</kbd></span>，打开运行，输入<code>powershell</code>，点击“确定”</font></p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/10.png"><img align="align" alt="10.png" src="https://mcappx.gitee.io/images/10.png"/></a></p>
 <p><font size="4"><strong>步骤2:输入命令</strong></font></p>
-<div class="highlight"><span class="filename">命令格式</span><pre><span></span><code>Add-AppxPackage "将引号内的内容改为安装包名字（包括扩展名）"
+<div class="highlight"><span class="filename">可点击旁边的复制按钮复制以下命令</span><pre><span></span><code>Add-AppxPackage
 </code></pre></div>
+<p><font size="3">复制上面的命令，然后在PowerShell窗口中右键粘贴命令，并在命令后添加一个<strong>空格</strong>，接着将<code>Appx</code>安装包拖放到PowerShell窗口中，最终效果如图所示</font></p>
+<p><a class="glightbox" href="https://mcappx.gitee.io/images/11.png"><img align="align" alt="11.png" src="https://mcappx.gitee.io/images/11.png"/></a></p>
 <div class="admonition warning">
 <p class="admonition-title">请特别注意</p>
 <ul>
 <li>
-<p>注意命令行中的<strong>空格</strong>！</p>
-</li>
-<li>
-<p>有<strong>两个</strong>英文引号！</p>
+<p>注意命令后的<strong>空格</strong>！</p>
 </li>
 <li>
 <p>命令中的符号均为<strong>英文</strong>，输成中文符号会导致命令无法被程序识别！</p>
 </li>
-<li>
-<p>安装包名字请根据实际情况为准，<strong><mark class="critic">不能直接用“举例”中的命令</mark></strong>！</p>
-</li>
 </ul>
 </div>
-<details class="quote" open="open">
-<summary>举例</summary>
-<p><code>Add-AppxPackage "Microsoft.ExampleProgram_9.999.999_x64__8wekyb3d8bbwe.Appx"</code></p>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/11.png"><img align="align" alt="11.png" src="https://mcappx.gitee.io/images/11.png"/></a></p>
-</details>
 <p><font size="4"><strong>步骤3:安装</strong></font></p>
 <p><font size="3">按键盘上的<span class="keys"><kbd class="key-enter">Enter</kbd></span>，蓝色方框里的黄色进度条开始走动（如图），直到进度条走到底，蓝色方框消失，且没有红字报错，表明安装成功。安装成功后先<strong>不要</strong>启动游戏，需要继续完成<a href="#_11">下一步</a>操作</font></p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/12.png"><img align="align" alt="12.png" src="https://mcappx.gitee.io/images/12.png"/></a></p>
