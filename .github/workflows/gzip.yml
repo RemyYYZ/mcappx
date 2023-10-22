@@ -1,0 +1,45 @@
+# Mkdocs routine for continuous deployment 
+# This file must be on main branch under .github/workflows/ci.yml
+
+name: Gzip 
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      # all plugins go here
+      - run: pip install mkdocs-material 
+      - run: pip install lightgallery
+      - run: pip install mkdocs-minify-plugin
+      - run: mkdocs gh-deploy --force
+          
+      # Node setup
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      # install gzipper with npm
+      - run: npm install
+      - run: npm i gzipper -g
+
+      # check out other branch (gh-pages) 
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
+
+      # compress all files in all directories
+      - run: gzipper compress --include htm,html,css,js,svg,xml,map,json,img,png,jpg,jpeg --zopfli --brotli --remove-larger .
+
+      # commit
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Compress Files
+          branch: gh-pages
+          push_options: '--force'
