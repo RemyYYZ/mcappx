@@ -1,9 +1,0 @@
-[[redirects]]
-  from = "/Windows/*"
-  to = "/bedrock/:splat"
-  status = 301
-
-[[redirects]]
-  from = "/WindowsEducation/*"
-  to = "/education-uwp/:splat"
-  status = 301
