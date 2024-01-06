@@ -3,6 +3,6 @@ function firm() {
         return false;
     }
     else {
-        window.location.replace("./success/");
+        window.open("./success/","_self");
    }
 }
