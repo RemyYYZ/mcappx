@@ -1,0 +1,5 @@
+User-agent:*
+Disallow:/success/
+Disallow:/pay/
+Disallow:/about/
+Disallow:/terms/
