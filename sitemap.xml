@@ -3,12 +3,10 @@
 <!-- Web-Site-Map.com -->
 <url><loc>https://www.mcappx.com/</loc><priority>1.00</priority></url>
 <url><loc>https://www1.mcappx.com/</loc><priority>1.00</priority></url>
-<url><loc>https://www.mcappx.com/bedrock/1.20/</loc><priority>0.85</priority></url>
+<url><loc>https://www2.mcappx.com/</loc><priority>1.00</priority></url>
+<url><loc>https://www.mcappx.com/bedrock/1.20/</loc><priority>1.00</priority></url>
 <url><loc>https://www.mcappx.com/help/</loc><priority>1.00</priority></url>
-<url><loc>https://www.mcappx.com/pay/</loc><priority>0.85</priority></url>
-<url><loc>https://www.mcappx.com/about/</loc><priority>0.85</priority></url>
-<url><loc>https://www.mcappx.com/terms/</loc><priority>0.85</priority></url>
-<url><loc>https://www.mcappx.com/bedrock/1.19/</loc><priority>0.85</priority></url>
+<url><loc>https://www.mcappx.com/bedrock/1.19/</loc><priority>1.00</priority></url>
 <url><loc>https://www.mcappx.com/bedrock/1.18/</loc><priority>0.85</priority></url>
 <url><loc>https://www.mcappx.com/bedrock/1.17/</loc><priority>0.85</priority></url>
 <url><loc>https://www.mcappx.com/bedrock/1.16/</loc><priority>0.85</priority></url>
@@ -58,4 +56,3 @@
 <url><loc>https://www.mcappx.com/education-win32/1.9/</loc><priority>0.85</priority></url>
 <url><loc>https://www.mcappx.com/education-win32/1.7/</loc><priority>0.85</priority></url>
 </urlset>
- 
