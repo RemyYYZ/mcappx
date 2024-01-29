@@ -1,8 +1,0 @@
-Add-appxpackage : 部署失败，原因是 HRESULT: 0x80073D0A, 无法安装该程序包，因为 Windows 防火墙服务未运行。请启
-用 Windows 防火墙服务并重试。                                                                                 错误 0x80073D0A: 无法安装程序包 Microsoft.MinecraftUWP_1.20.5101.0_x64__8wekyb3d8bbwe，因为防火墙服务未运行。 请确保已启用防火墙服务且该服务已开始运行。                                                                    注意: 有关其他信息，请在事件日志中查找 [ActivityId] 69cdec7b-52c5-0002-e320-ce69c552da01，或使用命令行 Get-Ap pPackageLog -ActivityID 69cdec7b-52c5-0002-e320-ce69c552da01                                                  所在位置 行:1 字符: 1
-+ Add-appxpackage Microsoft.MinecraftUWP_1.20.5101.0_x64__8wekyb3d8bbwe ...
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (D:\Microsoft.Mi...kyb3d8bbwe.Appx:String) [Add-AppxPackage], Ex
-   ception
-    + FullyQualifiedErrorId : DeploymentError,Microsoft.Windows.Appx.PackageManager.Commands.AddAppxPackageC
-   ommand
