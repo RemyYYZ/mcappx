@@ -2232,8 +2232,8 @@
 <p>需要先<a href="../#_2">安装游戏框架<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
 </li>
 <li>
-<p>下载一个辅助安装脚本</p>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZ6b6PuOHi1HqGaVme5ULwEBeZCE_fiycNpMJPftXxNyXQ?download=1">点击下载脚本文件 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p>下载 Minecraft 辅助部署程序</p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
 </li>
 </ol>
 <h3 id="_3">解压文件<a class="headerlink" href="#_3" title="分享链接">&para;</a></h3>
@@ -2252,7 +2252,7 @@
 <p>把刚才改好扩展名的安装包解压（最好选择解压到文件夹里，该文件夹接下来我们称作“Appx文件夹”）</p>
 </li>
 <li>
-<p>解压下载的脚本压缩包<code>MC-Setup.zip</code>后，你会得到一个<code>setup.bat</code>脚本文件，并把它放到之前解压的Appx文件夹根目录里，如图</p>
+<p>解压下载的辅助部署程序压缩包<code>MCAPPX-Deployer.zip</code>后，你会得到一个<code>MCAPPX-Deployer.cmd</code>程序文件，并把它放到之前解压的Appx文件夹根目录里，如图</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/25.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="25.png" src="https://mcappx.gitee.io/images/25.png" /></a></p>
 </li>
 </ol>
@@ -2277,10 +2277,10 @@
 <h3 id="_4">安装<a class="headerlink" href="#_4" title="分享链接">&para;</a></h3>
 <ol>
 <li>
-<p>在Appx文件夹根目录中，右键刚才放进来的<code>setup.bat</code>脚本，选择“以管理员身份运行”</p>
+<p>在Appx文件夹根目录中，双击打开刚才放进来的<code>MCAPPX-Deployer.cmd</code>程序文件</p>
 </li>
 <li>
-<p>在选择操作序号时，输入“1”，然后按<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
+<p>根据程序提示，在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“2”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
 </li>
 <li>
 <p>蓝色方框里的黄色进度条开始走动，直到进度条走到底，蓝色方框消失，且没有红字报错，表明安装成功。你便可以在“开始”菜单中找到已安装的游戏。</p>
@@ -2289,7 +2289,17 @@
 <div class="admonition question">
 <p class="admonition-title">0x80073CFF 报错怎么办？（如图）</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/29.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="29.png" src="https://mcappx.gitee.io/images/29.png" /></a></p>
-<p>在选择操作序号时，输入“2”，然后按<span class="keys"><kbd class="key-enter">Enter</kbd></span>，显示“操作成功完成”，然后再重新输入“1”安装。若显示“错误：拒绝访问”，请检查是否有以管理员身份运行<code>setup.bat</code>文件。</p>
+<ol>
+<li>
+<p>先点击右上角的“×”强制关闭程序，然后<strong><mark class="critic">右键程序选择“以管理员身份运行”</mark></strong>（若有弹出的用户账户控制的对话框请点击“是”）</p>
+</li>
+<li>
+<p>在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，显示“操作成功完成”（若显示“错误：拒绝访问”，请检查是否有以管理员身份运行<code>MCAPPX-Deployer.cmd</code>文件）</p>
+</li>
+<li>
+<p>然后再尝试<a href="#_4">安装</a>步骤</p>
+</li>
+</ol>
 </div>
 <div class="admonition warning">
 <p class="admonition-title">最终打开Minecraft时可能会</p>

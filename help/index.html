@@ -2546,7 +2546,7 @@
 </div>
 <h3 id="_3">第三步 &gt;&gt; 安装游戏<a class="headerlink" href="#_3" title="分享链接">&para;</a></h3>
 <div class="admonition note">
-<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">常规安装</label><label for="__tabbed_3_2">命令行安装</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">常规安装</label><label for="__tabbed_3_2">辅助部署程序安装</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><font size=4><strong>步骤1:打开</strong></font></p>
@@ -2573,44 +2573,29 @@
 <p><font size=3>单击“安装”按钮，安装成功后先<strong>不要</strong>启动游戏，需要继续完成<a href="#_4">下一步</a>操作；若安装失败，则需要根据错误代码和报错信息在<a href="#_9">安装问题解答</a>中查找解决方法，然后再尝试安装</font></p>
 </div>
 <div class="tabbed-block">
-<p><em>（适用于电脑里没有应用安装程序的用户）</em></p>
-<p><font size=4><strong>步骤1:打开 PowerShell</strong></font></p>
-<p><font size=3>按下<span class="keys"><kbd class="key-windows">Win</kbd><span>+</span><kbd class="key-r">R</kbd></span>，打开运行，输入<code>powershell</code>，点击“确定”</font></p>
+<p><font size=4><strong>步骤1:下载 Minecraft 辅助部署程序</strong></font></p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p><font size=3>下载下来的是一个压缩包，解压下载的脚本压缩包<code>MCAPPX-Deployer.zip</code>后，你会得到一个 <code>MCAPPX-Deployer.cmd</code>程序文件</font></p>
+<p><font size=4><strong>步骤2:使用辅助部署程序安装 Minecraft</strong></font></p>
+<p><font size=3></p>
+<ol>
+<li>
+<p>双击打开<code>MCAPPX-Deployer.cmd</code>程序文件，弹出黑底白字的窗口，按照程序提示，输入“1”并按下键盘上的<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/10.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="10.png" src="https://mcappx.gitee.io/images/10.png" /></a></p>
-<p><font size=4><strong>步骤2:输入命令</strong></font></p>
-<div class="highlight"><span class="filename">可点击旁边的复制按钮复制以下命令</span><pre><span></span><code>Add-AppxPackage
-</code></pre></div>
-<p><font size=3>复制上面的命令，然后在 PowerShell 窗口中右键粘贴命令，接着按键盘上的<span class="keys"><kbd class="key-enter">Enter</kbd></span>（有时候可能不需要按），然后便显示如图所示的内容</font></p>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/11.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="11.png" src="https://mcappx.gitee.io/images/11.png" /></a></p>
-<div class="admonition warning">
-<p class="admonition-title">请特别注意</p>
-<p>命令中的符号均为<strong>英文</strong>，输成中文符号会导致命令无法被程序识别！</p>
-</div>
-<p><font size=4><strong>步骤3:填入安装包路径</strong></font></p>
-<p><font size=3>在<code>Path:</code>后填入 <code>Appx</code> 游戏安装包路径，</font></p>
-<div class="admonition question">
-<p class="admonition-title">填入安装包路径的方法</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:2"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Windows10 (Windows 控制台主机)</label><label for="__tabbed_4_2">Windows11 (Windows 终端)</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<p>将 <code>Appx</code> 游戏安装包，<strong>拖放</strong>到 PowerShell 窗口中</p>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/43.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="43.png" src="https://mcappx.gitee.io/images/43.png" /></a></p>
-</div>
-<div class="tabbed-block">
-<p>右键 <code>Appx</code> 游戏安装包，点击“复制”，然后在 PowerShell 窗口中右键粘贴</p>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/44.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="44.png" src="https://mcappx.gitee.io/images/44.png" /></a></p>
-</div>
-</div>
-</div>
-</div>
-<p><font size=3>最终效果如图所示</font></p>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/12.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="12.png" src="https://mcappx.gitee.io/images/12.png" /></a></p>
-<p><font size=4><strong>步骤4:安装</strong></font></p>
-<p><font size=3>再按键盘上的<span class="keys"><kbd class="key-enter">Enter</kbd></span>，蓝色方框里的黄色进度条开始走动（如图），直到进度条走到底，蓝色方框消失，且没有红字报错，表明安装成功。安装成功后先<strong>不要</strong>启动游戏，需要继续完成<a href="#_4">下一步</a>操作</font></p>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/13.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="13.png" src="https://mcappx.gitee.io/images/13.png" /></a></p>
+</li>
+<li>
+<p>弹出一个选取文件的窗口，在窗口中找到需要安装的<code>Appx</code>游戏安装包，选中它，然后点击“打开”</p>
+<p><a class="glightbox" href="https://mcappx.gitee.io/images/50.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="50.png" src="https://mcappx.gitee.io/images/50.png" /></a></p>
+</li>
+<li>
+<p>安装时，蓝色方框里的黄色进度条走动，直到进度条走到底，蓝色方框消失，且没有红字报错，表明安装成功，安装成功后先<strong>不要</strong>启动游戏，需要继续完成<a href="#_4">下一步</a>操作</p>
+<p><a class="glightbox" href="https://mcappx.gitee.io/images/51.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="51.png" src="https://mcappx.gitee.io/images/51.png" /></a></p>
+</li>
+</ol>
+<p></font></p>
 <details class="question">
 <summary>出现红字报错的处理思路</summary>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/42.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="42.png" src="https://mcappx.gitee.io/images/42.png" /></a></p>
+<p><a class="glightbox" href="https://mcappx.gitee.io/images/52.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="52.png" src="https://mcappx.gitee.io/images/52.png" /></a></p>
 <p><em>（上图是一个示例，实际遇到的报错可能大同小异，但也可以参考以下的解决思路）</em></p>
 <p>首先，你需要知道错误代码在哪，如图蓝色方框标记处就是本次安装时出现的错误代码，方框后面的内容就是报错详细信息，然后需要综合错误代码和报错详细信息，在<a href="#_9">安装问题解答</a>中查找解决方法。</p>
 </details>
@@ -2620,7 +2605,7 @@
 </div>
 <h3 id="_4">第四步 &gt;&gt; 打开<a class="headerlink" href="#_4" title="分享链接">&para;</a></h3>
 <div class="admonition note">
-<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">基岩正式版Release/测试版Beta</label><label for="__tabbed_5_2">基岩预览版Preview</label><label for="__tabbed_5_3">教育版</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">基岩正式版Release/测试版Beta</label><label for="__tabbed_4_2">基岩预览版Preview</label><label for="__tabbed_4_3">教育版</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><font size=4><strong>步骤1:检查微软账户</strong></font></p>
@@ -2651,7 +2636,7 @@
 </div>
 <div class="tabbed-block">
 <p><font size=4><strong>步骤1:更改地区</strong></font></p>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Windows10</label><label for="__tabbed_6_2">Windows11</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Windows10</label><label for="__tabbed_5_2">Windows11</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a class="md-button" href="ms-settings:regionformatting">点此直接打开设置页</a></p>
@@ -2763,7 +2748,7 @@
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/35.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="35.png" src="https://mcappx.gitee.io/images/35.png" /></a></p>
 <details class="question">
 <summary>没有显示扩展名？</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">Windows10</label><label for="__tabbed_7_2">Windows11</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="6:2"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><input id="__tabbed_6_2" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Windows10</label><label for="__tabbed_6_2">Windows11</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>点击资源管理器上方的“查看”，然后把“文件扩展名”的勾勾上</p>
@@ -2840,14 +2825,14 @@
 <p><font size=3></p>
 <ul>
 <li>
-<p>方法一：使用上面的<a href="#__tabbed_3_2">命令行安装</a></p>
+<p>方法一（推荐）：使用上面的<a href="#__tabbed_3_2">辅助部署程序安装</a></p>
 </li>
 <li>
-<p>方法二：获取并安装“应用安装程序”，然后再尝试安装<code>Appx</code>文件</p>
+<p>方法二：获取并安装“应用安装程序”，然后再尝试双击打开<code>Appx</code>文件</p>
 <p><font size=2></p>
 <details class="download">
 <summary>应用安装程序 下载</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">微软商店链接</label><label for="__tabbed_8_2">我们提供的安装包</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="7:2"><input checked="checked" id="__tabbed_7_1" name="__tabbed_7" type="radio" /><input id="__tabbed_7_2" name="__tabbed_7" type="radio" /><div class="tabbed-labels"><label for="__tabbed_7_1">微软商店链接</label><label for="__tabbed_7_2">我们提供的安装包</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a class="md-button element-align-center text-align-center" href="https://apps.microsoft.com/store/detail/app-installer/9NBLGGH4NNS1">下载 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
@@ -2892,7 +2877,7 @@
 <summary>点击展开帮助</summary>
 <details class="abstract">
 <summary>在安装前选择位置</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Windows10</label><label for="__tabbed_9_2">Windows11</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="8:2"><input checked="checked" id="__tabbed_8_1" name="__tabbed_8" type="radio" /><input id="__tabbed_8_2" name="__tabbed_8" type="radio" /><div class="tabbed-labels"><label for="__tabbed_8_1">Windows10</label><label for="__tabbed_8_2">Windows11</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><font size=3></p>
@@ -2942,7 +2927,7 @@
 </details>
 <details class="abstract">
 <summary>在安装后移动到其他位置</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Windows10</label><label for="__tabbed_10_2">Windows11</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="9:2"><input checked="checked" id="__tabbed_9_1" name="__tabbed_9" type="radio" /><input id="__tabbed_9_2" name="__tabbed_9" type="radio" /><div class="tabbed-labels"><label for="__tabbed_9_1">Windows10</label><label for="__tabbed_9_2">Windows11</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a class="md-button" href="ms-settings:appsfeatures-app">点此直接打开设置页</a></p>
@@ -3002,7 +2987,9 @@
 </code></pre></div>
 </details>
 <p><font size=3></p>
-<p>安装 Minecraft 最新版本时，凡是系统版本号低于 <strong>19041.0(2004)</strong> 的均会报错，如系统版本号过低，请在设置中检查系统更新，或参阅<a href="./old-win10/">老旧版本 Win10 安装新版 Minecraft<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
+<p>安装 Minecraft 最新版本时，凡是系统版本号低于 <strong>19041.0(2004)</strong> 的均会报错，</p>
+<p>安装 Minecraft Education 最新版本时，凡是系统版本号低于 <strong>16299.0(1709)</strong> 的均会报错。</p>
+<p>如系统版本号过低，请在设置中检查系统更新，或参阅<a href="./old-win10/">老旧版本 Win10 安装新版 Minecraft<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
 <p></font></p>
 </details>
 <h4 id="0x80073cfb">错误代码0x80073CFB导致无法更新游戏？<a class="headerlink" href="#0x80073cfb" title="分享链接">&para;</a></h4>
@@ -3042,10 +3029,11 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 请启用 Windows 防火墙服务并重试。
 </code></pre></div>
 </details>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EYs9i8A8K3lLhWfYqEGhcAEBYijvYB1IKsC8cSz-R22lrQ?download=1">下载修复文件 (需解压) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
 <p><font size=3></p>
-<p>点击上面的下载按钮，下载 <code>MC-mpssvc.zip</code> 文件，解压后右键 <code>MC-mpssvc.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的对话框请点击“是”）。</p>
-<p>如果“本次操作结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启。</p>
+<p>点击上面的下载按钮，下载 <code>MCAPPX-Deployer.zip</code> 文件，解压后右键 <code>MCAPPX-Deployer.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的用户账户控制的对话框请点击“是”）。</p>
+<p>根据程序提示，在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“1”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
+<p>如果“本次修复结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启，重启后再尝试安装。</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/16.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="16.png" src="https://mcappx.gitee.io/images/16.png" /></a></p>
 <p></font></p>
 </details>
@@ -3089,7 +3077,7 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <p><font size=3></p>
 <ul>
 <li>
-<p>尝试使用<a href="#__tabbed_3_2">命令行安装</a>安装<code>Appx</code>文件</p>
+<p>尝试使用<a href="#__tabbed_3_2">辅助部署程序安装</a>安装<code>Appx</code>文件</p>
 </li>
 <li>
 <p>你可以使用下载旁边的校验信息和校验工具检验已下载的文件是否损坏，如损坏需重新下载</p>
@@ -3116,10 +3104,11 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 </code></pre></div>
 <p>还有一些类似于这样的情况，以下方法<strong>仍可使用</strong></p>
 </details>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EefQBv0J2HJPnhSNRwnoJbAB79koK-ZZSUBnSICqOkWohA?download=1">下载修复文件 (需解压) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
 <p><font size=3></p>
-<p>点击上面的下载按钮，下载 <code>MC-ClipSVC.zip</code> 文件，解压后右键 <code>MC-ClipSVC.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的对话框请点击“是”）。</p>
-<p>如果“本次操作结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启。</p>
+<p>点击上面的下载按钮，下载 <code>MCAPPX-Deployer.zip</code> 文件，解压后右键 <code>MCAPPX-Deployer.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的用户账户控制的对话框请点击“是”）。</p>
+<p>根据程序提示，在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“1”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
+<p>如果“本次修复结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启，重启后再尝试安装。</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/16.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="16.png" src="https://mcappx.gitee.io/images/16.png" /></a></p>
 <p></font></p>
 </details>
@@ -3135,10 +3124,11 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <div class="highlight"><pre><span></span><code>无法启动服务，原因可能是已被禁用或与其相关联的设备没有启动。
 </code></pre></div>
 </details>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EefQBv0J2HJPnhSNRwnoJbAB79koK-ZZSUBnSICqOkWohA?download=1">下载修复文件 (需解压) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
 <p><font size=3></p>
-<p>点击上面的下载按钮，下载 <code>MC-ClipSVC.zip</code> 文件，解压后右键 <code>MC-ClipSVC.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的对话框请点击“是”）。</p>
-<p>如果“本次操作结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启。</p>
+<p>点击上面的下载按钮，下载 <code>MCAPPX-Deployer.zip</code> 文件，解压后右键 <code>MCAPPX-Deployer.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的用户账户控制的对话框请点击“是”）。</p>
+<p>根据程序提示，在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“1”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
+<p>如果“本次修复结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启，重启后再尝试安装。</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/16.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="16.png" src="https://mcappx.gitee.io/images/16.png" /></a></p>
 <p></font></p>
 </details>
@@ -3165,10 +3155,11 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <p class="admonition-title">注</p>
 <p>经调查发现，使用过 <strong>Minecraft 破解器</strong> 的用户，经常出现这一情况，如果你曾经在电脑上使用过破解器可尝试一下该方法</p>
 </div>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EefQBv0J2HJPnhSNRwnoJbAB79koK-ZZSUBnSICqOkWohA?download=1">下载修复文件 (需解压) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
 <p><font size=3></p>
-<p>点击上面的下载按钮，下载 <code>MC-ClipSVC.zip</code> 文件，解压后右键 <code>MC-ClipSVC.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的对话框请点击“是”）。</p>
-<p>如果“本次操作结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启。</p>
+<p>点击上面的下载按钮，下载 <code>MCAPPX-Deployer.zip</code> 文件，解压后右键 <code>MCAPPX-Deployer.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的用户账户控制的对话框请点击“是”）。</p>
+<p>根据程序提示，在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“1”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
+<p>如果“本次修复结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启，重启后再尝试安装。</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/16.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="16.png" src="https://mcappx.gitee.io/images/16.png" /></a></p>
 <p></font></p>
 </details>
@@ -3187,13 +3178,13 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 </details>
 <details class="abstract">
 <summary>以上两种情况均尝试，但还是无法解决</summary>
-<p><font size=3>如果还是无法解决，可能是应用安装程序出bug了，可尝试使用上面的<a href="#__tabbed_3_2">命令行安装</a>，这大概率可以解决</font></p>
+<p><font size=3>如果还是无法解决，可能是应用安装程序出bug了，可尝试使用上面的<a href="#__tabbed_3_2">辅助部署程序安装</a>，这大概率可以解决</font></p>
 </details>
 </details>
 <h4 id="_14">显示安装权限不足然后报错？<a class="headerlink" href="#_14" title="分享链接">&para;</a></h4>
 <details class="question">
 <summary>点击展开帮助</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Windows10</label><label for="__tabbed_11_2">Windows11</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="10:2"><input checked="checked" id="__tabbed_10_1" name="__tabbed_10" type="radio" /><input id="__tabbed_10_2" name="__tabbed_10" type="radio" /><div class="tabbed-labels"><label for="__tabbed_10_1">Windows10</label><label for="__tabbed_10_2">Windows11</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><font size=3></p>
@@ -3272,7 +3263,7 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 </details>
 <details class="abstract">
 <summary>Preview版由于地区问题无法打开的解决方法</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">Windows10</label><label for="__tabbed_12_2">Windows11</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="11:2"><input checked="checked" id="__tabbed_11_1" name="__tabbed_11" type="radio" /><input id="__tabbed_11_2" name="__tabbed_11" type="radio" /><div class="tabbed-labels"><label for="__tabbed_11_1">Windows10</label><label for="__tabbed_11_2">Windows11</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a class="md-button" href="ms-settings:regionformatting">点此直接打开设置页</a></p>
@@ -3363,10 +3354,11 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <p class="admonition-title">注</p>
 <p>经调查发现，使用过 <strong>Minecraft 破解器</strong> 的用户，经常出现这一情况，如果你曾经在电脑上使用过破解器可尝试一下该方法</p>
 </div>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EefQBv0J2HJPnhSNRwnoJbAB79koK-ZZSUBnSICqOkWohA?download=1">下载修复文件 (需解压) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
 <p><font size=3></p>
-<p>点击上面的下载按钮，下载 <code>MC-ClipSVC.zip</code> 文件，解压后右键 <code>MC-ClipSVC.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的对话框请点击“是”）。</p>
-<p>如果“本次操作结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启。</p>
+<p>点击上面的下载按钮，下载 <code>MCAPPX-Deployer.zip</code> 文件，解压后右键 <code>MCAPPX-Deployer.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的用户账户控制的对话框请点击“是”）。</p>
+<p>根据程序提示，在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“1”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
+<p>如果“本次修复结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启，重启后再尝试安装。</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/16.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="16.png" src="https://mcappx.gitee.io/images/16.png" /></a></p>
 <p>该问题解决完成后大概率会遇到这个新问题：</p>
 <p><strong><a href="#0x803f8001preview">点击查看解决方法（错误代码0x803F8001导致无法打开？）</a></strong></p>
@@ -3401,7 +3393,7 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <summary>点击展开帮助</summary>
 <details class="download">
 <summary>Xbox Identity Provider 下载</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">微软商店链接</label><label for="__tabbed_13_2">我们提供的安装包</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="12:2"><input checked="checked" id="__tabbed_12_1" name="__tabbed_12" type="radio" /><input id="__tabbed_12_2" name="__tabbed_12" type="radio" /><div class="tabbed-labels"><label for="__tabbed_12_1">微软商店链接</label><label for="__tabbed_12_2">我们提供的安装包</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a class="md-button element-align-center text-align-center" href="https://apps.microsoft.com/store/detail/xbox-identity-provider/9WZDNCRD1HKW">下载 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
@@ -3493,10 +3485,11 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <p class="admonition-title">注</p>
 <p>经调查发现，使用过 <strong>Minecraft 破解器</strong> 的用户，经常出现这一情况，如果你曾经在电脑上使用过破解器可尝试一下该方法</p>
 </div>
-<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EefQBv0J2HJPnhSNRwnoJbAB79koK-ZZSUBnSICqOkWohA?download=1">下载修复文件 (需解压) <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
+<p><a class="md-button md-button--primary" href="https://remycn-my.sharepoint.cn/:u:/g/personal/admin_cn_remyyyz_com/EZTtKLX2bs9Jr9FcjqiGXEcBB8ShkRsVIVvxuJMdTooxWQ?download=1">下载 Minecraft 辅助部署程序 <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5 20h14v-2H5m14-9h-4V3H9v6H5l7 7 7-7Z"/></svg></span></a></p>
 <p><font size=3></p>
-<p>点击上面的下载按钮，下载 <code>MC-ClipSVC.zip</code> 文件，解压后右键 <code>MC-ClipSVC.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的对话框请点击“是”）。</p>
-<p>如果“本次操作结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启。</p>
+<p>点击上面的下载按钮，下载 <code>MCAPPX-Deployer.zip</code> 文件，解压后右键 <code>MCAPPX-Deployer.cmd</code> 文件，<strong><mark class="critic">点击“以管理员身份运行”</mark></strong>（若有弹出的用户账户控制的对话框请点击“是”）。</p>
+<p>根据程序提示，在主菜单输入“3”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span>，进入高级选项，再输入“1”，按下<span class="keys"><kbd class="key-enter">Enter</kbd></span></p>
+<p>如果“本次修复结果”中显示“操作成功完成”，则<strong><mark class="critic">必须重启电脑</mark></strong>，请您保存好您的工作项目，然后按<strong><mark class="critic">任意键</mark></strong>开始重启，重启后再尝试安装。</p>
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/16.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="16.png" src="https://mcappx.gitee.io/images/16.png" /></a></p>
 <p></font></p>
 </details>
@@ -3506,7 +3499,7 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 </details>
 <details class="abstract">
 <summary>有应用缓存</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="14:2"><input checked="checked" id="__tabbed_14_1" name="__tabbed_14" type="radio" /><input id="__tabbed_14_2" name="__tabbed_14" type="radio" /><div class="tabbed-labels"><label for="__tabbed_14_1">Windows10</label><label for="__tabbed_14_2">Windows11</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="13:2"><input checked="checked" id="__tabbed_13_1" name="__tabbed_13" type="radio" /><input id="__tabbed_13_2" name="__tabbed_13" type="radio" /><div class="tabbed-labels"><label for="__tabbed_13_1">Windows10</label><label for="__tabbed_13_2">Windows11</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p><a class="md-button" href="ms-settings:appsfeatures-app">点此直接打开设置页</a></p>
