@@ -2157,18 +2157,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#0x80073cfb" class="md-nav__link">
+  <a href="#0x80073d10" class="md-nav__link">
     <span class="md-ellipsis">
-      错误代码0x80073CFB导致无法更新游戏？
+      错误代码0x80073D10导致无法安装游戏？
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#0x80073d10" class="md-nav__link">
+  <a href="#0x80073cfb" class="md-nav__link">
     <span class="md-ellipsis">
-      错误代码0x80073D10导致无法安装游戏？
+      错误代码0x80073CFB导致无法更新游戏？
     </span>
   </a>
   
@@ -2184,9 +2184,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#0x80070570" class="md-nav__link">
+  <a href="#0x800705700x800700b0x80073cf0" class="md-nav__link">
     <span class="md-ellipsis">
-      错误代码0x80070570导致无法安装
+      错误代码0x80070570/0x800700B/0x80073CF0导致无法安装
     </span>
   </a>
   
@@ -2973,7 +2973,7 @@
 <summary>点击展开帮助</summary>
 <details class="quote" open="open">
 <summary>错误信息示例</summary>
-<div class="highlight"><pre><span></span><code>应用安装失败，错误消息: 由于程序包 Microsoft.ExampleProgram_9.999.999_x64__8wekyb3d8bbwe 与设备不兼容，Windows 无法安装该程序包。
+<div class="highlight"><pre><span></span><code>由于程序包 Microsoft.ExampleProgram_9.999.999_x64__8wekyb3d8bbwe 与设备不兼容，Windows 无法安装该程序包。
 
 该程序包要求 Windows.Universal 设备系列运行操作系统版本 10、0、19041、0 或更高版本。
 
@@ -2986,17 +2986,6 @@
 <p>如系统版本号过低，请在设置中检查系统更新，或参阅<a href="./old-win10/">老旧版本 Win10 安装新版 Minecraft<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
 <p></font></p>
 </details>
-<h4 id="0x80073cfb">错误代码0x80073CFB导致无法更新游戏？<a class="headerlink" href="#0x80073cfb" title="分享链接">&para;</a></h4>
-<details class="question">
-<summary>点击展开帮助</summary>
-<details class="quote" open="open">
-<summary>错误信息示例</summary>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/2.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="2.png" src="https://mcappx.gitee.io/images/2.png" /></a></p>
-</details>
-<p><font size=3></p>
-<p>需要卸载掉电脑上已安装的 Minecraft 或 Minecraft Preview 或 Minecraft Education（更新哪一个 Minecraft 版本报错，就卸载哪一个，无需全删），打开开始菜单，找到需要卸载的 Minecraft 版本，右键卸载即可，然后重新安装需要更新的 Minecraft。<strong>请注意卸载前备份游戏存档！</strong></p>
-<p></font></p>
-</details>
 <h4 id="0x80073d10">错误代码0x80073D10导致无法安装游戏？<a class="headerlink" href="#0x80073d10" title="分享链接">&para;</a></h4>
 <details class="question">
 <summary>点击展开帮助</summary>
@@ -3004,13 +2993,27 @@
 <summary>错误信息示例</summary>
 <div class="highlight"><pre><span></span><code>部署操作失败，因为该程序包针对的是错误的处理器体系结构。
 
-Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要体系结构 ARM，但此计算机具有体系结构 x64。(0x80073D10)
+Windows 无法安装程序包 Microsoft.ExampleProgram，因为此程序包需要体系结构 ARM，但此计算机具有体系结构 x64。(0x80073D10)
 </code></pre></div>
 </details>
 <p><font size=3></p>
 <p>根据错误信息就可以知道，是因为在下载时安装包架构选择错误，导致系统和安装包不兼容，进而导致无法安装。可以参阅以下项目：</p>
 <p><a href="./environment/#_6">关于安装包架构<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
 <p><a href="./environment/#_4">如何查看相关系统信息？<span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M320 0c-17.7 0-32 14.3-32 32s14.3 32 32 32h82.7L201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L448 109.3V192c0 17.7 14.3 32 32 32s32-14.3 32-32V32c0-17.7-14.3-32-32-32H320zM80 32C35.8 32 0 67.8 0 112v320c0 44.2 35.8 80 80 80h320c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32v112c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16h112c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"/></svg></span></a></p>
+<p></font></p>
+</details>
+<h4 id="0x80073cfb">错误代码0x80073CFB导致无法更新游戏？<a class="headerlink" href="#0x80073cfb" title="分享链接">&para;</a></h4>
+<details class="question">
+<summary>点击展开帮助</summary>
+<details class="quote" open="open">
+<summary>错误信息示例</summary>
+<div class="highlight"><pre><span></span><code>当前用户已安装此应用的未打包版本。
+
+打包版本无法替换该版本。冲突程序包为 Microsoft.ExampleProgram，由 CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US 发布。 (0x80073cfb)
+</code></pre></div>
+</details>
+<p><font size=3></p>
+<p>需要卸载掉电脑上已安装的 Minecraft 或 Minecraft Preview 或 Minecraft Education（更新哪一个 Minecraft 版本报错，就卸载哪一个，无需全删），打开开始菜单，找到需要卸载的 Minecraft 版本，右键卸载即可，然后重新安装需要更新的 Minecraft。<strong>请注意卸载前备份游戏存档！</strong></p>
 <p></font></p>
 </details>
 <h4 id="0x80073d0a">错误代码0x80073D0A导致无法安装游戏？<a class="headerlink" href="#0x80073d0a" title="分享链接">&para;</a></h4>
@@ -3031,12 +3034,21 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <p><a class="glightbox" href="https://mcappx.gitee.io/images/16.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="16.png" src="https://mcappx.gitee.io/images/16.png" /></a></p>
 <p></font></p>
 </details>
-<h4 id="0x80070570">错误代码0x80070570导致无法安装<a class="headerlink" href="#0x80070570" title="分享链接">&para;</a></h4>
+<h4 id="0x800705700x800700b0x80073cf0">错误代码0x80070570/0x800700B/0x80073CF0导致无法安装<a class="headerlink" href="#0x800705700x800700b0x80073cf0" title="分享链接">&para;</a></h4>
 <details class="question">
 <summary>点击展开帮助</summary>
 <details class="quote" open="open">
 <summary>错误信息示例</summary>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/48.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="48.png" src="https://mcappx.gitee.io/images/48.png" /></a></p>
+<div class="highlight"><pre><span></span><code>部署失败（或应用安装失败），原因是 HRESULT: 0x80070570, 无法打开包。
+
+MsixvcStagingSession 中的 Common::Deployment::MsixvcStagingSession::GetManifestReader 失败，出现错误 0x80070570。
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>部署失败，原因是 HRESULT: 0x80073CF0, 无法打开包。
+
+错误 0x8007000B: 从位置 Microsoft.ExampleProgram_9.999.999_x64__8wekyb3d8bbwe.Appx 中打开程序包失败。
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>请向开发人员索要新的应用包。此应用包格式不正确，需要重新生成或重新签名 (0x800700B)
+</code></pre></div>
 <p>还有一些类似于这样的情况，错误代码<strong>可能不同</strong>，但以下方法<strong>仍可使用</strong></p>
 </details>
 <p><font size=3>有以下两种情况</font></p>
@@ -3065,7 +3077,10 @@ Windows 无法安装程序包 Microsoft.MinecraftUWP，因为此程序包需要�
 <summary>点击展开帮助</summary>
 <details class="quote" open="open">
 <summary>错误信息示例</summary>
-<p><a class="glightbox" href="https://mcappx.gitee.io/images/14.png" data-type="image" data-width="100%" data-height="auto" data-desc-position="bottom"><img align="align" alt="14.png" src="https://mcappx.gitee.io/images/14.png" /></a></p>
+<div class="highlight"><pre><span></span><code>从 Microsoft.ExampleProgram_9.999.999_x64__8wekyb3d8bbwe 使用程序包 Microsoft.ExampleProgram_9.999.999_x64__8wekyb3d8bbwe 中的目标卷 C: 执行的部署 Add 操作失败，
+
+错误为 0x80040154。有关诊断应用部署问题的帮助，请参阅 http://go.microsoft.com/fwlink/?LinkId=235160。 (0x80040154)
+</code></pre></div>
 <p>还有一些类似于这样的情况，错误代码<strong>可能不同</strong>，但以下方法<strong>仍可使用</strong></p>
 </details>
 <p><font size=3></p>
